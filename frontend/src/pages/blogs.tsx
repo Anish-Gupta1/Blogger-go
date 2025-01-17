@@ -1,7 +1,5 @@
-export const Blog = () =>{
-    return (
-        <div>
-            Blog!
-        </div>
-    )
+export const Blogs = () => {
+    return <div>
+        blogs!
+    </div>
 }
