@@ -1,1 +1,1 @@
-export const Backend_URL ="http://localhost:8787";
+export const Backend_URL ="https://backend.anish-gupta-16-02-06.workers.dev";
