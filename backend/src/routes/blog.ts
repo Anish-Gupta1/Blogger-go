@@ -94,7 +94,16 @@ blogRouter.get("/all", async(c) => {
         datasourceUrl: c.env.DATABASE_URL,
     }).$extends(withAccelerate());
     
-    const blogs = await prisma.blog.findMany();
+    const blogs = await prisma.blog.findMany({
+        select : {
+            title : true,
+            content : true,
+            date : true,
+            author : {select : {
+                name: true
+            }}
+        }
+    });
 
     return c.json({
         blogs

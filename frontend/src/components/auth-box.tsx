@@ -32,8 +32,8 @@ export default function AuthBox() {
         const data = response.data;
         
         
-        localStorage.setItem("authorization", data.jwt);
-        navigate("/blog");
+        localStorage.setItem("authorization", "bearer "+data.jwt);
+        navigate("/blogs");
       } else {
         console.error('Unexpected response:', response);
         alert("Unexpected response from server");
