@@ -27,7 +27,7 @@ useEffect(() => {
             setBlog(res.data.blog)
             setLoading(false);
         })
-}, []);
+}, [id]);
 
 return {
     loading,

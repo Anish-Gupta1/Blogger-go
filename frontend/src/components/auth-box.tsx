@@ -39,8 +39,8 @@ export default function AuthBox() {
         alert("Unexpected response from server");
       }
     } catch (e) {
-      console.error("Error while signing in:", e);
-      alert("Error while signing");
+      console.error("User with this email already exist", e);
+      alert("User with this email already exist");
     }
   }
 
