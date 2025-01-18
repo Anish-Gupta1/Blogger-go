@@ -55,4 +55,5 @@ This project is a personal learning experience, but I welcome feedback and sugge
 This project is licensed under the MIT License.  
 
 ---  
-Thank you for visiting **Blogger-Go**! Stay tuned for more updates as I continue to enhance the platform and explore new possibilities in web development. 🚀  
+
+
