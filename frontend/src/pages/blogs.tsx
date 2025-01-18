@@ -1,11 +1,16 @@
-import { Appbar } from "../components/appbar";
 import { BlogCard } from "../components/blog-card";
-import { useBlog } from "../components/useBlog";
+import { useBlogs } from "../hooks/useBlogs";
+import { Loader } from "../components/loader";
+import { Appbar } from "../components/appbar";
 
 export const Blogs = () => {
-  const { loading, blogs } = useBlog();
+  const { loading, blogs } = useBlogs();
   if (loading) {
-    return <div>loading...</div>;
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
   }
 
   return (
@@ -15,6 +20,7 @@ export const Blogs = () => {
         <div className=" max-w-xl">
           {blogs.map((blog) => (
             <BlogCard
+              id={blog.id}
               authorName={blog.author.name}
               title={blog.title}
               content={blog.content}
