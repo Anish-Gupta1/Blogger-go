@@ -36,7 +36,7 @@ Welcome to **Blogger-Go**, my very first project! 🎉 This simple blogging plat
   - [Cloudflare](https://www.cloudflare.com/) for improving performance and ensuring fast delivery of the site.  
 
 ## 🌐 Live Website  
-Check out the live version of Blogger-Go here: [Blogger-Go](https://blogger-go.vercel.app/blogs)  
+Check out the live version of Blogger-Go here: [Blogger-Go](https://blogger-go.vercel.app/signup)  
 
 
 ## 🌱 What I Learned  
